@@ -17,7 +17,7 @@ const questions = [
     ],
     author: {
       _id: "1",
-      name: "John Doe",
+      name: "Azim Taji",
       image:
         "https://static.vecteezy.com/system/resources/previews/002/002/403/non_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
     },
@@ -30,13 +30,10 @@ const questions = [
     _id: "2",
     title: "How to learn Javascript",
     description: "I want to learn Javascript, can anyone help me?",
-    tags: [
-      { _id: "1", name: "Javascript" },
-      { _id: "2", name: "Javascript" },
-    ],
+    tags: [{ _id: "1", name: "Javascript" }],
     author: {
-      _id: "1",
-      name: "John Doe",
+      _id: "2",
+      name: "Latkan Khan",
       image:
         "https://static.vecteezy.com/system/resources/previews/002/002/403/non_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
     },
@@ -44,6 +41,26 @@ const questions = [
     answers: 5,
     views: 100,
     createdAt: new Date("2021-09-01"),
+  },
+
+  {
+    _id: "3",
+    title: "How to learn Next Js",
+    description: "I want to learn NextJS, can anyone help me?",
+    tags: [
+      { _id: "1", name: "NextJs" },
+      { _id: "2", name: "Javascript" },
+    ],
+    author: {
+      _id: "3",
+      name: "Satyam Kilor",
+      image:
+        "https://static.vecteezy.com/system/resources/previews/002/002/403/non_2x/man-with-beard-avatar-character-isolated-icon-free-vector.jpg",
+    },
+    upvotes: 10,
+    answers: 5,
+    views: 100,
+    createdAt: new Date("2024-12-18"),
   },
 ];
 
