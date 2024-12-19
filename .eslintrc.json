@@ -12,12 +12,12 @@
       "error",
       {
         "groups": [
-          "builtin", // Built-in types are first
-          "external", // External libraries
-          "internal", // Internal modules
-          ["parent", "sibling"], // Parent and sibling types can be mingled together
-          "index", // Then the index file
-          "object" // Object imports
+          "builtin",
+          "external",
+          "internal",
+          ["parent", "sibling"],
+          "index",
+          "object"
         ],
         "newlines-between": "always",
         "pathGroups": [
@@ -34,14 +34,5 @@
         }
       }
     ]
-  },
-  "ignorePatterns": ["components/ui/**"],
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx"],
-      "rules": {
-        "no-undef": "off"
-      }
-    }
-  ]
+  }
 }

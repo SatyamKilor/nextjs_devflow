@@ -42,7 +42,7 @@ const AuthForm = <T extends FieldValues>({
   });
 
   const handleSubmit: SubmitHandler<T> = async () => {
-    // TODO: Authenticate user
+    // TODO: Authenticate User
   };
 
   const buttonText = formType === "SIGN_IN" ? "Sign In" : "Sign Up";
@@ -81,15 +81,15 @@ const AuthForm = <T extends FieldValues>({
 
         <Button
           disabled={form.formState.isSubmitting}
-          type="submit"
           className="primary-gradient paragraph-medium min-h-12 w-full rounded-2 px-4 py-3 font-inter !text-light-900"
         >
           {form.formState.isSubmitting
             ? buttonText === "Sign In"
-              ? "Signing In..."
+              ? "Signin In..."
               : "Signing Up..."
             : buttonText}
         </Button>
+
         {formType === "SIGN_IN" ? (
           <p>
             Don't have an account?{" "}
@@ -97,8 +97,8 @@ const AuthForm = <T extends FieldValues>({
               href={ROUTES.SIGN_UP}
               className="paragraph-semibold primary-text-gradient"
             >
-              Sign Up
-            </Link>{" "}
+              Sign up
+            </Link>
           </p>
         ) : (
           <p>
@@ -107,8 +107,8 @@ const AuthForm = <T extends FieldValues>({
               href={ROUTES.SIGN_IN}
               className="paragraph-semibold primary-text-gradient"
             >
-              Sign In
-            </Link>{" "}
+              Sign in
+            </Link>
           </p>
         )}
       </form>

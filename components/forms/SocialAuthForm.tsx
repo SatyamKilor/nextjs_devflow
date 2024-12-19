@@ -21,6 +21,7 @@ const SocialAuthForm = () => {
       });
     } catch (error) {
       console.log(error);
+
       toast({
         title: "Sign-in Failed",
         description:
@@ -44,13 +45,14 @@ const SocialAuthForm = () => {
         />
         <span>Log in with GitHub</span>
       </Button>
+
       <Button className={buttonClass} onClick={() => handleSignIn("google")}>
         <Image
           src="/icons/google.svg"
           alt="Google Logo"
           width={20}
           height={20}
-          className=" mr-2.5 object-contain"
+          className="mr-2.5 object-contain"
         />
         <span>Log in with Google</span>
       </Button>
